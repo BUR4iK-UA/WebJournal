@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="net.disy.jquery:jquery-ui:1.8.6" type="repository">
+    <properties maven-id="net.disy.jquery:jquery-ui:1.8.6" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jquery-ui-1.8.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jquery-1.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jquery-ui-1.8.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

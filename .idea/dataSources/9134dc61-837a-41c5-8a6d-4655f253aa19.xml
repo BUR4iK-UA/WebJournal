@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - webjournal@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="webjournal">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sakila"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="test"/>
+    <schema id="8" name="world"/>
+    <table id="9" parent="1" name="users"/>
+    <table id="10" parent="1" name="students"/>
+    <table id="11" parent="1" name="groups"/>
+    <table id="12" parent="1" name="subjects"/>
+    <table id="13" parent="1" name="valuations"/>
+    <column id="14" parent="9" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="15" parent="9" name="user_login">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="16" parent="9" name="user_pass">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="17" parent="9" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="18" parent="10" name="id_student">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="19" parent="10" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="20" parent="10" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="21" parent="10" name="id_group">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="22" parent="10" name="PRIMARY">
+      <columns>id_student</columns>
+      <primary>1</primary>
+    </key>
+    <column id="23" parent="11" name="id_group">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="24" parent="11" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="25" parent="11" name="date_create">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="26" parent="11" name="id_curator">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="27" parent="11" name="students_count">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="28" parent="11" name="PRIMARY">
+      <columns>id_group</columns>
+      <primary>1</primary>
+    </key>
+    <column id="29" parent="12" name="id_subject">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="30" parent="12" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="31" parent="12" name="id_teacher">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="12" name="id_group">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="33" parent="12" name="PRIMARY">
+      <columns>id_subject</columns>
+      <primary>1</primary>
+    </key>
+    <column id="34" parent="13" name="id_valuation">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="35" parent="13" name="value">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="36" parent="13" name="presense">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="37" parent="13" name="date">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="38" parent="13" name="id_subject">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="39" parent="13" name="id_student">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="40" parent="13" name="PRIMARY">
+      <columns>id_valuation</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
